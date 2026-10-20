@@ -12,7 +12,7 @@ npx rep-mind-map <путь к папке проекта>
 
 ## Стек
 
-- Node.js ≥ 18, TypeScript, ESM (`"type": "module"`).
+- Node.js ≥ 22, TypeScript, ESM (`"type": "module"`).
 - Разбор кода — `ts-morph`.
 - Отрисовка графа — D3.js (SVG, force simulation, drag, zoom).
 - Тесты — Vitest. Линтер — ESLint. Менеджер пакетов — npm.

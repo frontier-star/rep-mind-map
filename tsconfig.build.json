@@ -1,0 +1,8 @@
+{
+  // Сборка Node.js-части в dist/. Тесты и браузерный код в сборку не попадают.
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false
+  },
+  "exclude": ["src/renderer", "src/**/*.test.ts"]
+}

@@ -57,7 +57,7 @@ CLI → Parser → Graph Builder → HTML Generator → index.html (Renderer в 
 
 ## Стек
 
-Node.js ≥ 18 · TypeScript · ts-morph · D3.js · Vitest
+Node.js ≥ 22 · TypeScript · ts-morph · D3.js · Vitest
 
 ## Границы
 

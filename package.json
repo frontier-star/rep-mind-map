@@ -1,0 +1,40 @@
+{
+  "name": "rep-mind-map",
+  "version": "0.1.0",
+  "description": "CLI-инструмент: одной командой строит интерактивный граф зависимостей JS/TS-проекта до уровня функций и классов",
+  "type": "module",
+  "bin": {
+    "rep-mind-map": "dist/cli/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit && tsc --noEmit -p src/renderer",
+    "test": "vitest run",
+    "lint": "eslint .",
+    "start": "node dist/cli/index.js"
+  },
+  "keywords": [
+    "typescript",
+    "javascript",
+    "dependency-graph",
+    "visualization",
+    "cli",
+    "d3"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "@types/node": "^22.20.5",
+    "eslint": "^10.13.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.72.0",
+    "vitest": "^5.0.5"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  // Настройки для кода, который работает в браузере: есть DOM, нет типов Node.js.
+  // Так компилятор сам не даст использовать fs, path и т. п. в Renderer.
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "types": [],
+    "noEmit": true
+  },
+  "include": ["./**/*.ts", "../shared/**/*.ts"],
+  "exclude": []
+}
